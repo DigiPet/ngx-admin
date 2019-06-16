@@ -1,0 +1,6 @@
+{
+    "/webapi": {
+      "target": "http://18.217.113.128:8080/REST-DigiPet",
+      "secure": false
+    }
+  }

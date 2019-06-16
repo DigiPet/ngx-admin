@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,29 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule.forRoot(),
     ThemeModule.forRoot(),
     CoreModule.forRoot(),
+    NbAuthModule.forRoot({
+      // strategies: [
+      //   NbPasswordAuthStrategy.setup({
+      //     name: 'email',
+      //   }),
+      // ],
+      strategies: [
+        NbPasswordAuthStrategy.setup({
+          name: 'email',
+
+          baseEndpoint: '',
+           login: {
+             // ...
+             endpoint: '/webapi/authenticateuser',
+           },
+           register: {
+             // ...
+             endpoint: '/apiZ/auth/register',
+           },
+        }),
+      ],
+      forms: {},
+    }), 
   ],
   bootstrap: [AppComponent],
   providers: [
