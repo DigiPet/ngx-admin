@@ -7,15 +7,36 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/dashboard',
     home: true,
   },
+  
   {
     title: 'IoT Dashboard',
     icon: 'nb-home',
     link: '/pages/iot-dashboard',
   },
+
+
+  {
+    title: 'Clients PV',
+    icon: 'nb-home',
+    link: '/pages/clientPV',
+  },
+
   {
     title: 'FEATURES',
     group: true,
   },
+  {
+    title: 'Client',
+    icon: 'nb-user',
+    children: [
+      {
+        title: 'Profile',
+        link: '/pages/client/profile',
+      },
+    ],
+    home: true,
+  },
+
   {
     title: 'Extra Components',
     icon: 'nb-star',

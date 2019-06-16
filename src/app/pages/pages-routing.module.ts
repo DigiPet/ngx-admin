@@ -5,17 +5,28 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
-
+import {ClientProfileViewComponent} from './client/client-profile-view/client-profile-view.component';
+// import {ClientComponent} from './client/client.component';
 const routes: Routes = [{
   path: '',
   component: PagesComponent,
-  children: [{
+  children: [
+    {
     path: 'dashboard',
     component: ECommerceComponent,
   }, {
     path: 'iot-dashboard',
     component: DashboardComponent,
-  }, {
+  },
+  // {
+  //   path: 'clientPV',
+  //   component: ClientProfileViewComponent,
+  // },
+  {
+    path: 'client',
+    loadChildren: './client/client.module#ClientModule'
+  },
+   {
     path: 'ui-features',
     loadChildren: './ui-features/ui-features.module#UiFeaturesModule',
   }, {
@@ -52,7 +63,8 @@ const routes: Routes = [{
   }, {
     path: '**',
     component: NotFoundComponent,
-  }],
+  },
+  ],
 }];
 
 @NgModule({
