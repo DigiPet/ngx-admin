@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClientRoutingModule, routedComponents } from './client-routing.module';
 import { ThemeModule } from '../../@theme/theme.module';
+
+import { ClientRoutingModule, routedComponents } from './client-routing.module';
 import { ClientComponent } from './client.component';
 
 @NgModule({
