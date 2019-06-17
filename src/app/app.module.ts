@@ -42,7 +42,7 @@ import { AuthGuard } from './auth-guard.service';
            },
            register: {
              // ...
-             endpoint: '/apiZ/auth/register',
+             endpoint: '/webapi/client',
            },
            logout: {
             alwaysFail: false,

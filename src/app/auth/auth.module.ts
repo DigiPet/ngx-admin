@@ -7,7 +7,8 @@ import { NgxAuthRoutingModule } from './auth-routing.module';
 import { NbAuthModule } from '@nebular/auth';
 
 import { NgxLoginComponent } from './login/login.component'; // <---
-import { NgxClientRegisterComponent } from './register/register.component'; // <---
+import { NgxClientRegisterComponent } from './register-client/register-client.component'; // <---
+import { NgxCarerRegisterComponent } from './register-carer/register-carer.component'; // <---
 
 
 import { 
@@ -35,6 +36,7 @@ import {
   declarations: [
     NgxLoginComponent,
     NgxClientRegisterComponent,
+    NgxCarerRegisterComponent
     // ... here goes our new components
   ],
 })

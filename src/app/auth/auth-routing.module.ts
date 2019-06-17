@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NbAuthComponent } from '@nebular/auth';  // <---
 import { NgxLoginComponent } from './login/login.component'; // <---
-import { NgxClientRegisterComponent } from './register/register.component'; // <---
+import { NgxClientRegisterComponent } from './register-client/register-client.component'; // <---
+import { NgxCarerRegisterComponent } from './register-carer/register-carer.component'; // <---
 
 import {
   NbLoginComponent,
@@ -26,6 +27,10 @@ export const routes: Routes = [
       {
         path: 'registerClient',
         component: NgxClientRegisterComponent, // <---
+      },
+      {
+        path: 'registerCarer',
+        component: NgxCarerRegisterComponent, // <---
       },
       {
         path: 'logout',

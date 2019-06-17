@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { WalkRequestComponent } from './walk-request.component'
-import { InfoComponent } from './info/info.component';
+import { WRInfoComponent } from './wr-info/wr-info.component';
 import { WrCreateComponent } from './wr-create/wr-create.component';
 import { WRConfirmComponent } from './wr-confirm/wr-confirm.component';
 
@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: 'info',
-        component: InfoComponent,
+        component: WRInfoComponent,
       },
       {
         path: 'create',
@@ -44,7 +44,7 @@ export class WalkRequestRoutingModule {
 
 export const routedComponents = [
   WalkRequestComponent,
-  InfoComponent,
+  WRInfoComponent,
   WrCreateComponent,
   WRConfirmComponent
 

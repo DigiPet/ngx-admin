@@ -1,0 +1,71 @@
+<nb-card>
+  <nb-card-header><h1>Crear mascota</h1></nb-card-header>
+  <nb-card-body>
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder=""
+          [(ngModel)]="pet.nombre"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="breed">Raza</label>
+        <input
+          type="text"
+          class="form-control"
+          name="breed"
+          placeholder=""
+          [(ngModel)]="pet.raza"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Edad:</label>
+        <input
+          name="age"
+          type="number"
+          class="form-control"
+          [(ngModel)]="pet.edad"
+          min="1"
+          max="50"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="my-1 mr-2" for="pet_size">Tamano</label>
+        <select
+          class="custom-select my-1 mr-sm-2"
+          [(ngModel)]="pet.tamano"
+          id="pet_size"
+          name="pet_size"
+        >
+          <option *ngFor="let size of size_list" [value]="size.name">
+            {{ size.name }}
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descripcion:</label>
+        <div class="input-group">
+          <textarea
+            [(ngModel)]="pet.descripcion"
+            name="description"
+            rows="5"
+            nbInput
+            fullWidth
+            shape="square"
+            placeholder=""
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-danger" (click)="printPet()">Submit</button>
+    </form>
+  </nb-card-body>
+</nb-card>

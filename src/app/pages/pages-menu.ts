@@ -55,6 +55,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
 
   {
+    title: "Pet",
+    icon: "nb-user",
+    children: [
+      {
+        title: "Info",
+        link: "/pages/pet/info"
+      },
+      {
+        title: "Create",
+        link: "/pages/pet/create"
+      }
+    ]
+  },
+
+  {
     title: "Extra Components",
     icon: "nb-star",
     children: [

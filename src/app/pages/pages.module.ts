@@ -8,6 +8,7 @@ import { ThemeModule } from '../@theme/theme.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { ClientModule } from './client/client.module';
 import { WalkRequestModule } from './walk-request/walk-request.module';
+import { PetModule } from './pet/pet.module';
   
 
 // import { ClientProfileViewComponent } from './client/client-profile-view/client-profile-view.component';
@@ -26,7 +27,8 @@ const PAGES_COMPONENTS = [
     ECommerceModule,
     MiscellaneousModule,
     ClientModule,
-    WalkRequestModule
+    WalkRequestModule,
+    PetModule
   ],
   declarations: [
     ...PAGES_COMPONENTS,

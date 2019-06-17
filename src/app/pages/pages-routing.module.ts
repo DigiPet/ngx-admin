@@ -38,6 +38,10 @@ const routes: Routes = [{
     path: 'walk-request',
     loadChildren: './walk-request/walk-request.module#WalkRequestModule'
   },
+  {
+    path: 'pet',
+    loadChildren: './pet/pet.module#PetModule'
+  },
    {
     path: 'ui-features',
     loadChildren: './ui-features/ui-features.module#UiFeaturesModule',
