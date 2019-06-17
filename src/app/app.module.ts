@@ -44,6 +44,17 @@ import { AuthGuard } from './auth-guard.service';
              // ...
              endpoint: '/apiZ/auth/register',
            },
+           logout: {
+            alwaysFail: false,
+            endpoint: '/webapi/logout',
+            method: 'delete',
+            redirect: {
+              success: '/',
+              failure: null,
+            },
+            defaultErrors: ['Something went wrong, please try again.'],
+            defaultMessages: ['You have been successfully logged out.'],
+},
         }),
       ],
       forms: {

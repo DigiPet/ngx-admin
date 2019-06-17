@@ -4,6 +4,14 @@ import { NbAuthComponent } from '@nebular/auth';  // <---
 import { NgxLoginComponent } from './login/login.component'; // <---
 import { NgxClientRegisterComponent } from './register/register.component'; // <---
 
+import {
+  NbLoginComponent,
+  NbLogoutComponent,
+  NbRegisterComponent,
+  NbRequestPasswordComponent,
+  NbResetPasswordComponent,
+} from '@nebular/auth';
+
 export const routes: Routes = [
   // .. here goes our components routes
   
@@ -19,6 +27,10 @@ export const routes: Routes = [
         path: 'registerClient',
         component: NgxClientRegisterComponent, // <---
       },
+      {
+        path: 'logout',
+        component: NbLogoutComponent,
+},
     ],
   },
 
