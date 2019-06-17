@@ -15,6 +15,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
+import { NbAuthJWTToken } from '@nebular/auth';
+import { AuthGuard } from './auth-guard.service';
+// import {ClientRegisterComponent} from './pages/register/register.component'
 
 @NgModule({
   declarations: [AppComponent],
@@ -52,6 +55,9 @@ import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
             success: true,
             error: true,
           },
+          token: {
+            class: NbAuthJWTToken,
+          }
           // socialLinks: socialLinks, // social links at the bottom of a page
         },
         register: {
@@ -107,6 +113,7 @@ import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
   bootstrap: [AppComponent],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },
+    AuthGuard,
   ],
 })
 export class AppModule {

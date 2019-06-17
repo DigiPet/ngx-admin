@@ -4,6 +4,7 @@ import { ThemeModule } from '../../@theme/theme.module';
 
 import { ClientRoutingModule, routedComponents } from './client-routing.module';
 import { ClientComponent } from './client.component';
+import { ClienteCreateComponent } from './cliente-create/cliente-create.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { ClientComponent } from './client.component';
   ],
   declarations: [
     ...routedComponents,
-    ClientComponent
+    ClientComponent,
+    ClienteCreateComponent
   ],
 })
 export class ClientModule { }

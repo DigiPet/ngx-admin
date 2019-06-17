@@ -9,6 +9,8 @@ import { NotFoundComponent } from './miscellaneous/not-found/not-found.component
 
 // import {ClientProfileViewComponent} from './client/client-profile-view/client-profile-view.component';
 // import {ClientComponent} from './client/client.component';
+// import {ClientRegisterComponent} from './register/register.component'
+
 const routes: Routes = [{
   path: '',
   component: PagesComponent,

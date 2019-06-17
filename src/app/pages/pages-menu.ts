@@ -31,6 +31,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: "Profile",
         link: "/pages/client/profile"
+      },
+      {
+        title: "Create",
+        link: "/pages/client/create"
       }
     ]
   },

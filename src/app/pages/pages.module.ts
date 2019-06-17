@@ -12,6 +12,7 @@ import { WalkRequestModule } from './walk-request/walk-request.module';
 
 // import { ClientProfileViewComponent } from './client/client-profile-view/client-profile-view.component';
 // import { InfoComponent } from './walk-request/info/info.component'
+// import {ClientRegisterComponent} from './register/register.component'
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -29,6 +30,7 @@ const PAGES_COMPONENTS = [
   ],
   declarations: [
     ...PAGES_COMPONENTS,
+    // ClientRegisterComponent
     // InfoComponent
     // ClientProfileViewComponent,
   ],
