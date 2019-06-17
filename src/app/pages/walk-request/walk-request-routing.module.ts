@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { WalkRequestComponent } from './walk-request.component'
 import { InfoComponent } from './info/info.component';
+import { WrCreateComponent } from './wr-create/wr-create.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: 'info',
         component: InfoComponent,
+      },
+      {
+        path: 'create',
+        component: WrCreateComponent,
       }
     ],
   }
@@ -34,6 +39,7 @@ export class WalkRequestRoutingModule {
 
 export const routedComponents = [
   WalkRequestComponent,
-  InfoComponent
+  InfoComponent,
+  WrCreateComponent
 
 ];

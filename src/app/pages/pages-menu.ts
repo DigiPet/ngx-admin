@@ -1,283 +1,296 @@
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from "@nebular/theme";
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'nb-e-commerce',
-    link: '/pages/dashboard',
-    home: true,
-  },
-  
-  {
-    title: 'IoT Dashboard',
-    icon: 'nb-home',
-    link: '/pages/iot-dashboard',
-  },
-
-
-  {
-    title: 'Clients PV',
-    icon: 'nb-home',
-    link: '/pages/clientPV',
+    title: "E-commerce",
+    icon: "nb-e-commerce",
+    link: "/pages/dashboard",
+    home: true
   },
 
   {
-    title: 'FEATURES',
-    group: true,
-  },
-  {
-    title: 'Client',
-    icon: 'nb-user',
-    children: [
-      {
-        title: 'Profile',
-        link: '/pages/client/profile',
-      },
-    ],
-    home: true,
+    title: "IoT Dashboard",
+    icon: "nb-home",
+    link: "/pages/iot-dashboard"
   },
 
   {
-    title: 'Extra Components',
-    icon: 'nb-star',
-    children: [
-      {
-        title: 'Calendar',
-        link: '/pages/extra-components/calendar',
-      },
-      {
-        title: 'Stepper',
-        link: '/pages/extra-components/stepper',
-      },
-      {
-        title: 'List',
-        link: '/pages/extra-components/list',
-      },
-      {
-        title: 'Infinite List',
-        link: '/pages/extra-components/infinite-list',
-      },
-      {
-        title: 'Form Inputs',
-        link: '/pages/extra-components/form-inputs',
-      },
-      {
-        title: 'Accordion',
-        link: '/pages/extra-components/accordion',
-      },
-      {
-        title: 'Progress Bar',
-        link: '/pages/extra-components/progress-bar',
-      },
-      {
-        title: 'Spinner',
-        link: '/pages/extra-components/spinner',
-      },
-      {
-        title: 'Alert',
-        link: '/pages/extra-components/alert',
-      },
-      {
-        title: 'Tree',
-        link: '/pages/extra-components/tree',
-      },
-      {
-        title: 'Tabs',
-        link: '/pages/extra-components/tabs',
-      },
-      {
-        title: 'Calendar Kit',
-        link: '/pages/extra-components/calendar-kit',
-      },
-      {
-        title: 'Chat',
-        link: '/pages/extra-components/chat',
-      },
-    ],
+    title: "Clients PV",
+    icon: "nb-home",
+    link: "/pages/clientPV"
+  },
+
+  {
+    title: "FEATURES",
+    group: true
   },
   {
-    title: 'Forms',
-    icon: 'nb-compose',
+    title: "Client",
+    icon: "nb-user",
     children: [
       {
-        title: 'Form Inputs',
-        link: '/pages/forms/inputs',
+        title: "Profile",
+        link: "/pages/client/profile"
+      }
+    ]
+  },
+
+  {
+    title: "Walk Request",
+    icon: "nb-user",
+    children: [
+      {
+        title: "Info",
+        link: "/pages/walk-request/info"
       },
       {
-        title: 'Form Layouts',
-        link: '/pages/forms/layouts',
+        title: "Create",
+        link: "/pages/walk-request/create"
+      }
+    ]
+  },
+
+  {
+    title: "Extra Components",
+    icon: "nb-star",
+    children: [
+      {
+        title: "Calendar",
+        link: "/pages/extra-components/calendar"
       },
       {
-        title: 'Buttons',
-        link: '/pages/forms/buttons',
+        title: "Stepper",
+        link: "/pages/extra-components/stepper"
       },
       {
-        title: 'Datepicker',
-        link: '/pages/forms/datepicker',
+        title: "List",
+        link: "/pages/extra-components/list"
       },
-    ],
+      {
+        title: "Infinite List",
+        link: "/pages/extra-components/infinite-list"
+      },
+      {
+        title: "Form Inputs",
+        link: "/pages/extra-components/form-inputs"
+      },
+      {
+        title: "Accordion",
+        link: "/pages/extra-components/accordion"
+      },
+      {
+        title: "Progress Bar",
+        link: "/pages/extra-components/progress-bar"
+      },
+      {
+        title: "Spinner",
+        link: "/pages/extra-components/spinner"
+      },
+      {
+        title: "Alert",
+        link: "/pages/extra-components/alert"
+      },
+      {
+        title: "Tree",
+        link: "/pages/extra-components/tree"
+      },
+      {
+        title: "Tabs",
+        link: "/pages/extra-components/tabs"
+      },
+      {
+        title: "Calendar Kit",
+        link: "/pages/extra-components/calendar-kit"
+      },
+      {
+        title: "Chat",
+        link: "/pages/extra-components/chat"
+      }
+    ]
   },
   {
-    title: 'UI Features',
-    icon: 'nb-keypad',
-    link: '/pages/ui-features',
+    title: "Forms",
+    icon: "nb-compose",
     children: [
       {
-        title: 'Grid',
-        link: '/pages/ui-features/grid',
+        title: "Form Inputs",
+        link: "/pages/forms/inputs"
       },
       {
-        title: 'Icons',
-        link: '/pages/ui-features/icons',
+        title: "Form Layouts",
+        link: "/pages/forms/layouts"
       },
       {
-        title: 'Typography',
-        link: '/pages/ui-features/typography',
+        title: "Buttons",
+        link: "/pages/forms/buttons"
       },
       {
-        title: 'Animated Searches',
-        link: '/pages/ui-features/search-fields',
-      },
-    ],
+        title: "Datepicker",
+        link: "/pages/forms/datepicker"
+      }
+    ]
   },
   {
-    title: 'Modal & Overlays',
-    icon: 'nb-layout-default',
+    title: "UI Features",
+    icon: "nb-keypad",
+    link: "/pages/ui-features",
     children: [
       {
-        title: 'Dialog',
-        link: '/pages/modal-overlays/dialog',
+        title: "Grid",
+        link: "/pages/ui-features/grid"
       },
       {
-        title: 'Window',
-        link: '/pages/modal-overlays/window',
+        title: "Icons",
+        link: "/pages/ui-features/icons"
       },
       {
-        title: 'Popover',
-        link: '/pages/modal-overlays/popover',
+        title: "Typography",
+        link: "/pages/ui-features/typography"
       },
       {
-        title: 'Toastr',
-        link: '/pages/modal-overlays/toastr',
-      },
-      {
-        title: 'Tooltip',
-        link: '/pages/modal-overlays/tooltip',
-      },
-    ],
+        title: "Animated Searches",
+        link: "/pages/ui-features/search-fields"
+      }
+    ]
   },
   {
-    title: 'Bootstrap',
-    icon: 'nb-gear',
+    title: "Modal & Overlays",
+    icon: "nb-layout-default",
     children: [
       {
-        title: 'Form Inputs',
-        link: '/pages/bootstrap/inputs',
+        title: "Dialog",
+        link: "/pages/modal-overlays/dialog"
       },
       {
-        title: 'Buttons',
-        link: '/pages/bootstrap/buttons',
+        title: "Window",
+        link: "/pages/modal-overlays/window"
       },
       {
-        title: 'Modal',
-        link: '/pages/bootstrap/modal',
+        title: "Popover",
+        link: "/pages/modal-overlays/popover"
       },
-    ],
+      {
+        title: "Toastr",
+        link: "/pages/modal-overlays/toastr"
+      },
+      {
+        title: "Tooltip",
+        link: "/pages/modal-overlays/tooltip"
+      }
+    ]
   },
   {
-    title: 'Maps',
-    icon: 'nb-location',
+    title: "Bootstrap",
+    icon: "nb-gear",
     children: [
       {
-        title: 'Google Maps',
-        link: '/pages/maps/gmaps',
+        title: "Form Inputs",
+        link: "/pages/bootstrap/inputs"
       },
       {
-        title: 'Leaflet Maps',
-        link: '/pages/maps/leaflet',
+        title: "Buttons",
+        link: "/pages/bootstrap/buttons"
       },
       {
-        title: 'Bubble Maps',
-        link: '/pages/maps/bubble',
-      },
-      {
-        title: 'Search Maps',
-        link: '/pages/maps/searchmap',
-      },
-    ],
+        title: "Modal",
+        link: "/pages/bootstrap/modal"
+      }
+    ]
   },
   {
-    title: 'Charts',
-    icon: 'nb-bar-chart',
+    title: "Maps",
+    icon: "nb-location",
     children: [
       {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
+        title: "Google Maps",
+        link: "/pages/maps/gmaps"
       },
       {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
+        title: "Leaflet Maps",
+        link: "/pages/maps/leaflet"
       },
       {
-        title: 'D3',
-        link: '/pages/charts/d3',
+        title: "Bubble Maps",
+        link: "/pages/maps/bubble"
       },
-    ],
+      {
+        title: "Search Maps",
+        link: "/pages/maps/searchmap"
+      }
+    ]
   },
   {
-    title: 'Editors',
-    icon: 'nb-title',
+    title: "Charts",
+    icon: "nb-bar-chart",
     children: [
       {
-        title: 'TinyMCE',
-        link: '/pages/editors/tinymce',
+        title: "Echarts",
+        link: "/pages/charts/echarts"
       },
       {
-        title: 'CKEditor',
-        link: '/pages/editors/ckeditor',
+        title: "Charts.js",
+        link: "/pages/charts/chartjs"
       },
-    ],
+      {
+        title: "D3",
+        link: "/pages/charts/d3"
+      }
+    ]
   },
   {
-    title: 'Tables',
-    icon: 'nb-tables',
+    title: "Editors",
+    icon: "nb-title",
     children: [
       {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
+        title: "TinyMCE",
+        link: "/pages/editors/tinymce"
       },
-    ],
+      {
+        title: "CKEditor",
+        link: "/pages/editors/ckeditor"
+      }
+    ]
   },
   {
-    title: 'Miscellaneous',
-    icon: 'nb-shuffle',
+    title: "Tables",
+    icon: "nb-tables",
     children: [
       {
-        title: '404',
-        link: '/pages/miscellaneous/404',
-      },
-    ],
+        title: "Smart Table",
+        link: "/pages/tables/smart-table"
+      }
+    ]
   },
   {
-    title: 'Auth',
-    icon: 'nb-locked',
+    title: "Miscellaneous",
+    icon: "nb-shuffle",
     children: [
       {
-        title: 'Login',
-        link: '/auth/login',
-      },
-      {
-        title: 'Register',
-        link: '/auth/register',
-      },
-      {
-        title: 'Request Password',
-        link: '/auth/request-password',
-      },
-      {
-        title: 'Reset Password',
-        link: '/auth/reset-password',
-      },
-    ],
+        title: "404",
+        link: "/pages/miscellaneous/404"
+      }
+    ]
   },
+  {
+    title: "Auth",
+    icon: "nb-locked",
+    children: [
+      {
+        title: "Login",
+        link: "/auth/login"
+      },
+      {
+        title: "Register",
+        link: "/auth/register"
+      },
+      {
+        title: "Request Password",
+        link: "/auth/request-password"
+      },
+      {
+        title: "Reset Password",
+        link: "/auth/reset-password"
+      }
+    ]
+  }
 ];
