@@ -5,6 +5,7 @@ import { ThemeModule } from '../../@theme/theme.module';
 import { WalkRequestRoutingModule, routedComponents } from './walk-request-routing.module';
 import { WalkRequestComponent } from './walk-request.component';
 import { WrCreateComponent } from './wr-create/wr-create.component';
+import { WRConfirmComponent } from './wr-confirm/wr-confirm.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { WrCreateComponent } from './wr-create/wr-create.component';
   ],
   declarations: [
     ...routedComponents, 
-    WalkRequestComponent, WrCreateComponent,
+    WalkRequestComponent, WrCreateComponent, WRConfirmComponent,
     ]
 })
 export class WalkRequestModule { }

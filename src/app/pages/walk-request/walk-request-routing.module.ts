@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WalkRequestComponent } from './walk-request.component'
 import { InfoComponent } from './info/info.component';
 import { WrCreateComponent } from './wr-create/wr-create.component';
+import { WRConfirmComponent } from './wr-confirm/wr-confirm.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path: 'create',
         component: WrCreateComponent,
+      },
+      {
+        path: 'confirm',
+        component: WRConfirmComponent,
       }
     ],
   }
@@ -40,6 +45,7 @@ export class WalkRequestRoutingModule {
 export const routedComponents = [
   WalkRequestComponent,
   InfoComponent,
-  WrCreateComponent
+  WrCreateComponent,
+  WRConfirmComponent
 
 ];
